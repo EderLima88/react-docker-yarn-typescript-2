@@ -17,6 +17,18 @@ function App() {
     text: "Passear",
     category: "Pessoal",
     isComplete: false
+  },
+    {
+    id: 7,
+    text: "Correr",
+    category: "Pessoal",
+    isComplete: false
+  },
+    {
+    id: 7,
+    text: "Correr",
+    category: "Pessoal",
+    isComplete: false
   }
   ])
 

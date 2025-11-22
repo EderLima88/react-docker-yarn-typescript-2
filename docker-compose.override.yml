@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev   # usa o estágio Node para dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - /app/node_modules
+    command: yarn start
+    environment:
+      NODE_ENV: development

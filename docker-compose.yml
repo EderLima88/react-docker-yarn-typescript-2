@@ -1,11 +1,18 @@
-version: "2"
 services:
-  nginx-react:
-    container_name: react-container-yarn-typescript-2
+  react-app:
     build:
       context: .
       dockerfile: Dockerfile
+      target: build   # <- usa o estágio "build" com Node
     ports:
-      - 80:80
+      - "3000:3000"
+    volumes:
+      - .:/app/src
+      - /app/node_modules
+    command: yarn start --host 0.0.0.0  # ou npm start, se preferir
     environment:
-      NODE_ENV: production
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    
+     
