@@ -5,7 +5,13 @@
      <img src="public\docker-logo.png">
      <img src="public\logo192.png">
      <img src="public\typescript.png">
+     <img src="public\copilot192.png">
 </div>
+
+---
+## Sincroniazação do container no desenvolvimento com navegador ao salvar
+
+:warning:ATENÇÃO Projeto para consulta.:warning: <br><br>Aplicação WEB em container, com volume e sincronizado com o navegador. <br><br>As aterações após salvas refletem no navegador instantaneamente. 
 
 ---
 ## Descrição
@@ -20,6 +26,7 @@ Após criado um aplicação React, ela foi colocada dentro de um container Docke
 * CSS
 * Yarn
 * Nginx
+* Copilot
 
 ---
 
